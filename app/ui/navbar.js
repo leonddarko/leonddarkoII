@@ -27,7 +27,7 @@ export default function NavigationBar() {
       className={`
         fixed top-0 w-full z-50 transition-all duration-300
         ${scrolled
-          ? "bg-zinc-800/80 backdrop-blur-lg shadow-lg rounded-b-2xl"
+          ? "bg-slate-900/80 backdrop-blur-lg shadow-lg rounded-b-2xl"
           : "bg-transparent backdrop-blur-none shadow-none"}
       `}
     >
@@ -96,7 +96,7 @@ export default function NavigationBar() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="absolute right-6 top-full mt-2 w-72 bg-zinc-800/70 backdrop-blur-lg rounded-2xl shadow-xl p-3">
+        <div className="absolute right-6 top-full mt-2 w-72 bg-zinc-800/80 backdrop-blur-lg rounded-2xl shadow-xl p-3">
           <ul className="flex flex-col gap-2">
             {navlinks.map((item) => {
               const active = pathname === item.path

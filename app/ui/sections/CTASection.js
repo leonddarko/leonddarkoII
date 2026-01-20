@@ -34,7 +34,7 @@ export default function CTASection() {
                         href="mailto:leonddarko@gmail.com"
                         className="inline-flex items-center justify-center
               rounded-full px-10 py-3 font-semibold
-              text-black bg-white hover:bg-white/90
+              text-white bg-slate-800 hover:bg-slate-800/90
               transition hover:scale-105"
                     >
                         Get in touch
@@ -45,8 +45,8 @@ export default function CTASection() {
                         target="_blank"
                         className="inline-flex items-center justify-center
               rounded-full px-10 py-3 font-semibold
-              text-white border border-white/20
-              hover:bg-white/10 transition"
+              text-white border border-slate-800/20
+              hover:bg-slate-800/70 transition"
                     >
                         View Full resume
                     </Link>

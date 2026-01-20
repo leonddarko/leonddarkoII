@@ -47,7 +47,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="bg-black py-32 px-6 md:px-16 text-center"
+      className="bg-slate-950 py-32 px-6 md:px-16 text-center"
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center space-y-16">
         <h2 className="text-white font-notoserif text-4xl font-black">
@@ -72,11 +72,12 @@ export default function ProjectsSection() {
                   snap-center
                   min-w-[85%] sm:min-w-[60%] md:min-w-[45%]
                   rounded-3xl
-                  bg-zinc-900/60
+                  bg-slate-800/60
                   border border-white/5
+                  backdrop-blur-lg shadow-lg
                   p-10
                   transition
-                  hover:bg-zinc-900
+                  hover:bg-slate-800
                   hover:scale-[1.01]
                   focus:outline-none
                 "
@@ -96,7 +97,7 @@ export default function ProjectsSection() {
                       key={tech}
                       className="
                         text-xs px-3 py-1 rounded-full
-                        bg-white/5 border border-white/10
+                        bg-white/5 border border-white/5
                         text-white/70 backdrop-blur-md
                       "
                     >

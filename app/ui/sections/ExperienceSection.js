@@ -36,7 +36,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="bg-zinc-950 py-32 px-6 md:px-16 text-center"
+      className="py-32 px-6 md:px-16 text-center"
     >
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         <h2 className="text-white font-notoserif text-4xl font-black mb-20">
