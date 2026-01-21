@@ -44,8 +44,8 @@ export default function NavigationBar() {
               size={20}
               className="text-gray-200 transition-all"
             />
-            <div className="leading-tight">
-              <span className="text-base md:text-xl font-black text-white block">
+            <div className="">
+              <span className="text-base md:text-xl font-black text-white block leading-5">
                 LEON DARKO
               </span>
               <span className="text-xs text-white/50 block">DEVELOPER & CONTENT CREATOR</span>
@@ -96,7 +96,7 @@ export default function NavigationBar() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="absolute right-6 top-full mt-2 w-72 bg-zinc-800/80 backdrop-blur-lg rounded-2xl shadow-xl p-3">
+        <div className="absolute right-6 top-full mt-2 w-72 bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-xl p-3">
           <ul className="flex flex-col gap-2">
             {navlinks.map((item) => {
               const active = pathname === item.path

@@ -1,4 +1,4 @@
-import { geistSans, geistMono } from "./ui/fonts";
+import { courierPrime } from "./ui/fonts";
 import "./globals.css";
 import Script from "next/script";
 import NavigationBar from "./ui/navbar";
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className=" bg-slate-950">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${courierPrime.variable} antialiased`}
       >
         <NavigationBar />
         {children}

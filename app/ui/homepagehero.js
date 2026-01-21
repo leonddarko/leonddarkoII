@@ -1,6 +1,6 @@
 "use client"
 
-import { CheckCircle2, ChevronDown, Phone } from "lucide-react"
+import { ArrowUpRight, CheckCircle2, ChevronDown, Dot, Phone } from "lucide-react"
 import Link from "next/link";
 
 export default function HomepageHero() {
@@ -21,35 +21,38 @@ export default function HomepageHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent rounded-b-3xl" />
 
         {/* Content */}
-        <div className="absolute z-10 h-1/3 flex flex-col justify-end items-center gap-1 px-6 md:px-16 pb-20 space-y-3 bottom-0 w-full">
+        <div className="absolute z-10 h-1/2 flex flex-col justify-center items-center gap-1 px-6 md:px-16 pb-20 space-y-3 bottom-0 w-full">
 
-          <CheckCircle2 size={25} className=" text-gray-200 leading-2" />
+          <Dot size={25} className=" text-gray-200 leading-2" />
           <div className="text-center">
             <h1
-              className="text-white text-5xl font-black leading-tightblack"
+              className="text-white text-4xl font-black leading-tight"
               style={{ animation: 'fadeInUp 1.5s ease forwards' }}
             >
               LEON DARKO
             </h1>
             <p
-              className="text-white/70 text-lg"
+              className="text-white/70 text-base"
               style={{ animation: 'fadeInUp 1.5s ease forwards' }}
             >
               Full-Stack Web Developer & Content Creator
             </p>
           </div>
 
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-start  gap-2">
             {social_links.map(({ label, href }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 text-xs hover:text-amber-800 transition-colors"
-              >
-                {label}
-              </a>
+              <>
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 text-xs hover:text-amber-800 transition-colors"
+                >
+                  {label}
+                </a>
+                <ArrowUpRight size={12} className="text-white" />
+              </>
             ))}
           </div>
 
@@ -71,8 +74,8 @@ export default function HomepageHero() {
               </button>
             </Link>
 
-            <a href="tel:0558317206">
-              <div className="p-1.5 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all hover:animate-ping">
+            <a href="tel:+233558317206">
+              <div className="p-2 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all hover:animate-ping">
                 <Phone size={18} className="text-white" />
               </div>
             </a>
