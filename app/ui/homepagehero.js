@@ -6,15 +6,16 @@ import Link from "next/link";
 export default function HomepageHero() {
 
   const social_links = [
-    { label: "Email", href: "mailto:leonddarko@gmail.com" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/leonddarko" },
+    { id:0, label: "Email", href: "mailto:leonddarko@gmail.com" },
+    { id:1, label: "LinkedIn", href: "https://www.linkedin.com/in/leonddarko" },
     // { label: "Facebook", href: "https://www.facebook.com/yourprofile" },
-    { label: "GitHub", href: "https://github.com/leonddarko" },
+    { id:2, label: "GitHub", href: "https://github.com/leonddarko" },
   ];
 
   return (
     <>
       <div
+      id="top"
         className={`relative h-screen bg-slate-950 bg-[url('/assets/leon_hero_img.jpg')] bg-cover bg-top rounded-b-3xl shadow-xl transition-all`}
       >
         {/* Overlay */}
@@ -40,10 +41,10 @@ export default function HomepageHero() {
           </div>
 
           <div className="flex justify-center items-start  gap-2">
-            {social_links.map(({ label, href }) => (
+            {social_links.map(({id, label, href }) => (
               <>
                 <a
-                  key={label}
+                  key={id}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"

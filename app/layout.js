@@ -2,6 +2,7 @@ import { courierPrime } from "./ui/fonts";
 import "./globals.css";
 import Script from "next/script";
 import NavigationBar from "./ui/navbar";
+import Footer from "./ui/sections/Footer";
 
 export const metadata = {
   title: "Leon Darko",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <NavigationBar />
         {children}
         <Script src="https://kit.fontawesome.com/dcd356c426.js" />
+        <Footer />
       </body>
     </html>
   );
