@@ -40,11 +40,10 @@ export default function HomepageHero() {
             </p>
           </div>
 
-          <div className="flex justify-center items-start  gap-2">
+          <div className="flex justify-center items-start gap-4">
             {social_links.map(({id, label, href }) => (
-              <>
+              <div className="flex justify-start gap-2" key={id}>
                 <a
-                  key={id}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,7 +52,7 @@ export default function HomepageHero() {
                   {label}
                 </a>
                 <ArrowUpRight size={12} className="text-white" />
-              </>
+              </div>
             ))}
           </div>
 
