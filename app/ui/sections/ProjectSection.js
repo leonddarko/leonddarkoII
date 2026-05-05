@@ -7,20 +7,6 @@ import Link from "next/link"
 
 const projects = [
   {
-    title: "Manual Entry & Tracker Platform",
-    description:
-      "A high-performance data entry and processing platform built with Next.js and Tailwind for True North Media Monitoring Ltd.",
-    stack: ["Next.js", "JavaScript", "Tailwind CSS", "Vercel"],
-    link: "https://manual-entry-tracker.vercel.app/",
-  },
-    {
-    title: "True North Prints Database Platform",
-    description:
-      "Also a high-performance data entry and processing platform built with Next.js and Tailwind for True North Media Monitoring Ltd.",
-    stack: ["Next.js", "JavaScript", "Tailwind CSS", "Vercel"],
-    link: "https://truenorthprintsdatabase.vercel.app/",
-  },
-  {
     title: "Aukiss Media",
     description:
       "A magazine-style webapp for curated article and other information relevant to Aukiss Media.",
@@ -32,7 +18,7 @@ const projects = [
     description:
       "An e-commerce website for Djanie Chocolate company. A Premium Dark Chocolate producer.",
     stack: ["WordPress"],
-    link: "#",
+    link: "https://djaniechocolate.com/",
   },
   {
     title: "NMIMR HEPMAL Project Webapp",
