@@ -5,14 +5,6 @@ import { Rocket } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <footer className="bg-slate-950 border-t border-white/5 py-12 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center space-y-4">
@@ -24,35 +16,12 @@ export default function Footer() {
           Full-Stack Developer & Content Creator
         </span> */}
 
-        <button
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-          className="
-        group
-        fixed bottom-6 right-6 z-50
-        p-3
-        rounded-full
-        bg-slate-800/70
-        backdrop-blur-xl
-        border border-white/10
-        shadow-lg shadow-black/20
-        transition-all duration-300
-        hover:scale-110
-        hover:bg-amber-600
-        active:scale-95
-      "
-        >
-          <Rocket
-            size={22}
-            className="
-          -rotate-45
-          text-white
-          transition-transform duration-300
-          group-hover:-translate-y-1
-        "
-          />
-        </button>
-        
+        {/* <a href="/#top">
+          <div className="p-1.5 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all animate-bounce text-white hover:text-amber-700">
+            <Rocket size={20} className="-rotate-45 " />
+          </div>
+        </a> */}
+
         {/* Social / External Links */}
         <div className="flex items-center gap-6 pt-2">
           <Link
