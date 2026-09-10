@@ -7,11 +7,11 @@ import Link from "next/link"
 
 const projects = [
   {
-    title: "LDB EVMate",
+    title: "Pishon RE",
     description:
-      "An EV app I'm still working on that basically should help EVs find charge points. ",
+      "A premium map-first real estate marketplace designed to make discovering property across Ghana simpler, more visual, and more location focused.",
     stack: ["Next.js", "Next-Auth", "DaisyUI", "Mongoose", "Leaflet", "Google Maps API"],
-    link: "https://ldbevmate.vercel.app/",
+    link: "https://pishonre.vercel.app/",
   },
   {
     title: "Aukiss Media",
