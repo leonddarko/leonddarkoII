@@ -1,6 +1,8 @@
 // app/components/sections/ExperienceSection.tsx
 "use client"
 
+import Link from "next/link"
+
 const experiences = [
   {
     role: "Full-Stack Developer",
@@ -14,7 +16,7 @@ const experiences = [
     company: "TikTok / Youtube",
     period: "2025 — Present",
     description:
-      "Sharing must-know Bible verses and breaking down God's word.",
+      "Sharing must-know Bible verses and breaking down God's word and also digital marketing.",
   },
   {
     role: "Full-Stack Developer & I.T Support",
@@ -67,6 +69,20 @@ export default function ExperienceSection() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div style={{ animation: 'fadeInUp 1.5s ease forwards' }} className=" flex justify-center items-center gap-2 mt-10">
+
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+          >
+            <button
+              className="inline-block backdrop-blur-lg bg-slate-700/50 hover:bg-slate-800/70 shadow-sm text-white px-10 py-2 rounded-full font-semibold hover:scale-105 transition hover:cursor-pointer"
+            >
+              View Full Resume
+            </button>
+          </Link>
         </div>
       </div>
     </section>

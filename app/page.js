@@ -1,8 +1,8 @@
-import HomepageHero from "./ui/homepagehero";
-import AboutSection from "./ui/sections/AboutSection";
-import CTASection from "./ui/sections/CTASection";
-import ExperienceSection from "./ui/sections/ExperienceSection";
-import ProjectsSection from "./ui/sections/ProjectSection";
+import HomepageHero from "../components/ui/homepagehero";
+import AboutSection from "../components/ui/sections/AboutSection";
+import CTASection from "../components/ui/sections/CTASection";
+import ExperienceSection from "../components/ui/sections/ExperienceSection";
+import ProjectsSection from "../components/ui/sections/ProjectSection";
 
 export default function Home() {
   return (

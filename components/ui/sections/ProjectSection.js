@@ -3,8 +3,6 @@
 
 import Link from "next/link"
 
-// https://truenorthprintsdatabase.vercel.app/
-
 const projects = [
   {
     title: "Pishon RE",
@@ -51,7 +49,7 @@ export default function ProjectsSection() {
         <div className="w-full overflow-x-auto">
           <div
             className="
-              flex gap-4 px-2 pb-4
+              flex gap-4 px-2 py-4 pb-4
               snap-x snap-mandatory
               scroll-smooth
             "
@@ -71,7 +69,7 @@ export default function ProjectsSection() {
                   p-10
                   transition
                   hover:bg-slate-800
-                  hover:scale-[1.01]
+                  hover:scale-[1.02]
                   focus:outline-none
                 "
               >

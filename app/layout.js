@@ -1,9 +1,9 @@
-import { courierPrime } from "./ui/fonts";
+import { courierPrime } from "../components/ui/fonts";
 import "./globals.css";
 import Script from "next/script";
-import NavigationBar from "./ui/navbar";
-import Footer from "./ui/sections/Footer";
-import ScrollToTop from "./ui/ScrollToTop";
+import NavigationBar from "../components/ui/navbar";
+import Footer from "../components/ui/sections/Footer";
+import ScrollToTop from "../components/ui/ScrollToTop";
 
 export const metadata = {
   title: "Leon Darko",
@@ -35,15 +35,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className=" bg-slate-950">
+    <html lang="en">
       <body
-        className={`${courierPrime.variable} antialiased`}
+        className={`${courierPrime.variable} bg-slate-950 antialiased`}
       >
         <NavigationBar />
         {children}
-        <Script src="https://kit.fontawesome.com/dcd356c426.js" />
         <Footer />
         <ScrollToTop />
+        <Script src="https://kit.fontawesome.com/dcd356c426.js" />
       </body>
     </html>
   );

@@ -75,7 +75,7 @@ export default function HomepageHero() {
             </Link>
 
             <a href="tel:+233558317206">
-              <div className="p-2 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all hover:animate-ping">
+              <div className="p-2 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all hover:animate-pulse">
                 <Phone size={18} className="text-white" />
               </div>
             </a>

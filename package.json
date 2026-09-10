@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "daisyui": "^5.5.14",
     "framer-motion": "^12.38.0",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
@@ -17,9 +16,10 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/postcss": "^4.3.3",
+    "daisyui": "^5.7.34",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.3.3"
   }
 }

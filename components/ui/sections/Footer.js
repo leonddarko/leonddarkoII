@@ -26,21 +26,21 @@ export default function Footer() {
         <div className="flex items-center gap-6 pt-2">
           <Link
             href="mailto:leonddarko@gmail.com"
-            className="text-xs text-white/50 hover:text-amber-800 transition "
+            className="text-xs text-white/50 hover:text-amber-950 transition "
           >
             Email
           </Link>
           <Link
             href="https://www.linkedin.com/in/leonddarko"
             target="_blank"
-            className="text-xs text-white/50 hover:text-amber-800 transition "
+            className="text-xs text-white/50 hover:text-amber-950 transition "
           >
             LinkedIn
           </Link>
           <Link
             href="https://github.com/leonddarko"
             target="_blank"
-            className="text-xs text-white/50 hover:text-amber-800 transition "
+            className="text-xs text-white/50 hover:text-amber-950 transition "
           >
             GitHub
           </Link>

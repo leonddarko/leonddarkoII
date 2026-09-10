@@ -49,7 +49,7 @@ export default function ScrollToTop() {
             backdrop-blur-xl
             border border-white/10
             shadow-[0_8px_30px_rgb(0,0,0,0.25)]
-            hover:bg-amber-600
+            hover:bg-amber-950
             transition-colors duration-300
             active:scale-95
             cursor-pointer
