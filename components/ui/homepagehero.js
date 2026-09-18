@@ -1,88 +1,125 @@
-"use client"
+"use client";
 
-import { ArrowUpRight, CheckCircle2, ChevronDown, Dot, Phone } from "lucide-react"
+import { ArrowUpRight, ChevronDown, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function HomepageHero() {
-
-  const social_links = [
-    { id:0, label: "Email", href: "mailto:leonddarko@gmail.com" },
-    { id:1, label: "LinkedIn", href: "https://www.linkedin.com/in/leonddarko" },
-    // { label: "Facebook", href: "https://www.facebook.com/yourprofile" },
-    { id:2, label: "GitHub", href: "https://github.com/leonddarko" },
+  const socialLinks = [
+    { id: 0, label: "Email", href: "mailto:leonddarko@gmail.com" },
+    {
+      id: 1,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/leonddarko",
+    },
+    {
+      id: 2,
+      label: "GitHub",
+      href: "https://github.com/leonddarko",
+    },
   ];
 
   return (
-    <>
-      <div
+    <section
       id="top"
-        className={`relative h-screen bg-slate-950 bg-[url('/assets/leon_hero_img.jpg')] bg-cover bg-top rounded-b-3xl shadow-xl transition-all`}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent rounded-b-3xl" />
+      className="relative h-screen overflow-hidden rounded-b-[2rem] bg-slate-950 shadow-2xl"
+    >
+      {/* Background */}
+      <div
+        className="absolute inset-0 bg-cover bg-top"
+        style={{
+          backgroundImage: "url('/assets/leon_hero_img.jpg')",
+        }}
+      />
 
-        {/* Content */}
-        <div className="absolute z-10 h-1/2 flex flex-col justify-center items-center gap-1 px-6 md:px-16 pb-20 space-y-3 bottom-0 w-full">
+      {/* Cinematic Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-slate-950/20 to-slate-950" />
 
-          <Dot size={25} className=" text-gray-200 leading-2" />
-          <div className="text-center">
-            <h1
-              className="text-white text-4xl font-black leading-tight"
-              style={{ animation: 'fadeInUp 1.5s ease forwards' }}
+      {/* Bottom Vignette */}
+      <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent" />
+
+      {/* Hero Content */}
+      <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-center px-6 pb-10 text-center md:pb-14">
+
+        {/* Name */}
+        <h1
+          className="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl md:text-6xl"
+          style={{
+            animation: "fadeInUp 1s ease forwards",
+          }}
+        >
+          LEON DARKO
+        </h1>
+
+        {/* Title */}
+        <p
+          className="mt-2 text-base font-light tracking-wide text-white/50 sm:text-lg md:text-3xl"
+          style={{
+            animation: "fadeInUp 1.2s ease forwards",
+          }}
+        >
+          Full-Stack Web Developer
+        </p>
+
+        {/* Social Links */}
+        <div className="mt-6 flex items-center gap-5">
+          {socialLinks.map(({ id, label, href }) => (
+            <a
+              key={id}
+              href={href}
+              target={href.startsWith("mailto:") ? undefined : "_blank"}
+              rel={
+                href.startsWith("mailto:")
+                  ? undefined
+                  : "noopener noreferrer"
+              }
+              className="group flex items-center gap-1 text-xs text-white/50 transition-colors duration-300 hover:text-white"
             >
-              LEON DARKO
-            </h1>
-            <p
-              className="text-white/70 text-base"
-              style={{ animation: 'fadeInUp 1.5s ease forwards' }}
-            >
-              Full-Stack Web Developer & Content Creator
-            </p>
-          </div>
-
-          <div className="flex justify-center items-start gap-4">
-            {social_links.map(({id, label, href }) => (
-              <div className="flex justify-start gap-2" key={id}>
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/70 text-xs hover:text-amber-800 transition-colors"
-                >
-                  {label}
-                </a>
-                <ArrowUpRight size={12} className="text-white" />
-              </div>
-            ))}
-          </div>
-
-          <div style={{ animation: 'fadeInUp 1.5s ease forwards' }} className=" flex justify-center items-center gap-2">
-            <a href="/#about">
-              <div className="p-1.5 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all animate-bounce">
-                <ChevronDown size={20} className="text-white" />
-              </div>
+              {label}
+              <ArrowUpRight
+                size={11}
+                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
             </a>
+          ))}
+        </div>
 
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-            >
-              <button
-                className="inline-block backdrop-blur-lg bg-slate-700/50 hover:bg-slate-800/70 shadow-sm text-white px-10 py-2 rounded-full font-semibold hover:scale-105 transition hover:cursor-pointer"
-              >
-                View Full Resume
-              </button>
-            </Link>
+        {/* Actions */}
+        <div className="mt-8 flex items-center gap-3">
 
-            <a href="tel:+233558317206">
-              <div className="p-2 backdrop-blur-md bg-slate-600/50 shadow-sm rounded-full hover:bg-slate-800/70 transition-all hover:animate-pulse">
-                <Phone size={18} className="text-white" />
-              </div>
-            </a>
+          {/* Scroll */}
+          <a
+            href="#about"
+            aria-label="Scroll to About section"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+          >
+            <ChevronDown
+              size={18}
+              className="text-white/70 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:text-white"
+            />
+          </a>
 
-          </div>
+          {/* Resume */}
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            className="rounded-full border border-white/10 bg-white/[0.09] px-7 py-3 text-xs font-semibold tracking-wide text-white shadow-xl backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:bg-white/[0.15] hover:shadow-2xl"
+          >
+            View Full Resume
+          </Link>
+
+          {/* Call */}
+          <a
+            href="tel:+233558317206"
+            aria-label="Call Leon Darko"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+          >
+            <Phone
+              size={17}
+              className="text-white/70 transition-colors group-hover:text-white"
+            />
+          </a>
         </div>
       </div>
-    </>
-  )
+    </section>
+  );
 }

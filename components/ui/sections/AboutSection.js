@@ -92,6 +92,31 @@ export default function AboutSection() {
           ABOUT ME
         </span>
 
+        {/* Credentials */}
+        <div className="mb-5 flex flex-wrap items-center justify-center gap-2">
+          <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 backdrop-blur-md">
+            <img
+              src="/assets/icons/bsc.png"
+              alt="BSc"
+              className="h-4 w-4 rounded-full object-cover"
+            />
+            <span className="text-[10px] font-medium tracking-wide text-white/60">
+              BSc IT · Methodist University Ghana
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 backdrop-blur-md">
+            <img
+              src="/assets/icons/udemy.png"
+              alt="Udemy"
+              className="h-4 w-4 rounded-full object-cover"
+            />
+            <span className="text-[10px] font-medium tracking-wide text-white/60">
+              Udemy Certified · Full-Stack Web Development
+            </span>
+          </div>
+        </div>
+
         <h2 className="font-notoserif text-4xl md:text-5xl font-black text-white leading-tight">
           I design & build digital experiences with intention.
         </h2>

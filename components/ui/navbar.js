@@ -1,6 +1,7 @@
 "use client"
 
 import { ChevronDown, Code, Dot, Scissors } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
@@ -38,24 +39,37 @@ export default function NavigationBar() {
         `}
       >
         {/* Logo */}
-        <Link href="/">
-          <div className=" flex justify-start items-center gap-3">
-            <Code
-              size={20}
-              className="text-gray-200 transition-all"
-            />
-            <div className="">
-              <span className="text-base md:text-xl font-black text-white block leading-5">
+        <Link href="/" className="group">
+          <div className="flex items-center gap-3">
+            {/* Profile Logo */}
+            <div className="relative shrink-0">
+              <div className="absolute -inset-[2px] rounded-full bg-white/20 blur-[2px] opacity-70 transition-all duration-300 group-hover:bg-white/40" />
+
+              {/* <img
+                src="/assets/leon-logo.png"
+                alt="Leon Darko"
+                className="relative h-10 w-10 rounded-full object-cover border border-white/20 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:border-white/40"
+              /> */}
+
+              <Image
+                src="/assets/leon-logo.png"
+                alt="Leon Darko"
+                width={40}
+                height={40}
+                className="relative h-10 w-10 rounded-full object-cover border border-white/20 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:border-white/40"
+              />
+            </div>
+
+            {/* Name */}
+            <div>
+              <span className="block text-base md:text-xl font-black tracking-tight text-white leading-5">
                 LEON DARKO
               </span>
-              <span className="text-xs text-white/50 block">DEVELOPER & CONTENT CREATOR</span>
+
+              <span className="block mt-0.5 text-[10px] md:text-xs font-medium tracking-[0.12em] text-white/50">
+                SOFTWARE DEVELOPER
+              </span>
             </div>
-{/* 
-            <div className="flex justify-center items-center gap-4">
-              <div className="text-white text-xs">Linkedin</div>
-              <div className="text-white text-xs">facebook</div>
-              <div className="text-white text-xs">Github</div>
-            </div> */}
           </div>
         </Link>
 

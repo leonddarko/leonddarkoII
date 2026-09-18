@@ -11,13 +11,13 @@ const experiences = [
     description:
       "Building modern web applications using Next.js, Tailwind, and scalable backend systems.",
   },
-  {
-    role: "Content Creator",
-    company: "TikTok / Youtube",
-    period: "2025 — Present",
-    description:
-      "Sharing must-know Bible verses and breaking down God's word and also digital marketing.",
-  },
+  // {
+  //   role: "Content Creator",
+  //   company: "TikTok / Youtube",
+  //   period: "2025 — Present",
+  //   description:
+  //     "Sharing must-know Bible verses and breaking down God's word and also digital marketing.",
+  // },
   {
     role: "Full-Stack Developer & I.T Support",
     company: "True North Media Monitoring",
@@ -72,16 +72,12 @@ export default function ExperienceSection() {
         </div>
 
         <div style={{ animation: 'fadeInUp 1.5s ease forwards' }} className=" flex justify-center items-center gap-2 mt-10">
-
           <Link
             href="/resume.pdf"
             target="_blank"
+            className="rounded-full border border-white/10 bg-white/[0.09] px-7 py-3 text-xs font-semibold tracking-wide text-white shadow-xl backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:bg-white/[0.15] hover:shadow-2xl"
           >
-            <button
-              className="inline-block backdrop-blur-lg bg-slate-700/50 hover:bg-slate-800/70 shadow-sm text-white px-10 py-2 rounded-full font-semibold hover:scale-105 transition hover:cursor-pointer"
-            >
-              View Full Resume
-            </button>
+            View Full Resume
           </Link>
         </div>
       </div>

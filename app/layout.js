@@ -7,11 +7,11 @@ import ScrollToTop from "../components/ui/ScrollToTop";
 
 export const metadata = {
   title: "Leon Darko",
-  description: "Leon Darko - Developer & Content Creator",
+  description: "Leon Darko - Software Developer",
 
   openGraph: {
     title: "Leon Darko",
-    description: "Developer & Content Creator",
+    description: "Software Developer",
     url: "https://leonddarkov2.vercel.app",
     siteName: "Leon Darko",
     images: [
@@ -19,7 +19,7 @@ export const metadata = {
         url: "/assets/leon_hero_img.jpg", // place in /public
         width: 1200,
         height: 630,
-        alt: "Leon Darko — Developer & Content Creator",
+        alt: "Leon Darko — Developer",
       },
     ],
     type: "website",
@@ -28,7 +28,7 @@ export const metadata = {
     twitter: {
     card: "summary_large_image",
     title: "Leon Darko",
-    description: "Developer & Content Creator",
+    description: "Software Developer",
     images: ["/assets/leon_hero_img.jpg"],
   },
 };
