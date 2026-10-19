@@ -1,6 +1,5 @@
 import { courierPrime } from "../components/ui/fonts";
 import "./globals.css";
-import Script from "next/script";
 import NavigationBar from "../components/ui/navbar";
 import Footer from "../components/ui/sections/Footer";
 import ScrollToTop from "../components/ui/ScrollToTop";
@@ -29,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Leon Darko",
     description: "Software Developer",
-    images: ["/assets/leon_hero_img.jpg"],
+    images: ["/assets/leon_hero_img_II.jpg"],
   },
 };
 
@@ -43,7 +42,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <ScrollToTop />
-        <Script src="https://kit.fontawesome.com/dcd356c426.js" />
       </body>
     </html>
   );
